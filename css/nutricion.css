@@ -1,0 +1,436 @@
+:root {
+    /*colores*/
+    --botcoin-orange: #f7931a;
+    --soft-orange:#ffe9d5;
+    --scondary-blue:#6f1af7;
+    --soft-purple:#edbdf6;
+    --warm-black:#201e1c;
+    --black:#282623;
+    --grey:#bababa;
+    --off-white:#faf8f7;
+    --just-white:#fff;
+    /* titulos */
+    --title-font :4rem;
+    --subtitle-font: 3rem;
+    --main-font: 1.8rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdeff98c, #ec38bc86, #7403c09c, #03001e9a), url(../Imagenes/Logo.PNG) ;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdeff98c, #ec38bc86, #7403c09c, #03001e9a), url(../Imagenes/Logo.PNG) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    font-size: var(--main-font);
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: var(--title-font);
+    color: white;
+
+}
+
+.textos-header h2{
+    font-size: var(--title-font);
+    font-weight: 300;
+    color: white;
+    
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main {
+    list-style: none;    
+    margin-top: 0px; 
+    margin-bottom: 0px;   
+    /* background: linear-gradient(to bottom, #eec8aab9, #b99f8bb9); */
+    
+}
+.categorias .categorias__img,
+.categorias .fa-shopping-basket,
+.categorias .descripcion__categoria{
+    cursor: pointer;
+}
+.nombre__categoria{
+    font-size: var(--main-font);
+    text-align: center;
+    color:rgba(112, 53, 112, 0.582);
+}
+.productos__container__slider{
+    margin:50px;
+    position: relative;
+}
+.titulo__slider{
+    
+    font-size: var(--subtitle-font);
+    width: 100vw;
+    text-align: center;
+    color: var(--warm-black);
+    position: absolute;
+}
+
+.container__categorias{
+    margin-top: 60px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categorias{
+    /* border-radius: 10px; */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.753);
+    box-shadow: 1px 1px 1px 1px rgba(181, 159, 202, 0.787);
+
+}
+/*ensayo*/
+ .galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    
+    background-size: cover;
+    margin-bottom: 10px;
+    width: 300px; 
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.452);
+}
+.imagen-port > img{
+    width: auto; 
+    height: 200px;
+    max-width: 300px;
+    
+    background-size: cover;
+    /* object-fit: cover;
+    display: block; */
+}
+.hover-galeria{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/ensure2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria1{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/enterex2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria2{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/gain2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria3{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/glucerna2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria4{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/herbalife2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria5{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/pediasure2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria6{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/serious_mass2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria7{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: url(../imagenes_nutricion/whey2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.categorias:hover .hover-galeria{
+    transform: scale(1);
+}  
+.categorias:hover .hover-galeria1{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria2{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria3{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria4{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria5{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria6{
+    transform: scale(1);
+} 
+.categorias:hover .hover-galeria7{
+    transform: scale(1);
+} 
+
+/*ensayo*/
+.productos-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 20px;
+    
+}
+.productos-header__btn{
+    font-size: var(--main-font);
+}
+.productos-header__container .producto__header__input{
+    border-radius: 20px;
+    box-shadow:0 12px 15px 0 rgba(148, 93, 153, 0.349),0 17px 50px 0 rgba(5, 5, 5, 0.281);
+    display: block;
+    padding: 10px;
+    width: 25cm
+}
+.productos-header__container  .fa-search{
+    position: absolute;
+    right: 50px ;
+    cursor: pointer;
+}
+
+.fa-search{    
+    background-image: url('../Imagenes/search-icon.PNG');
+    background-position: center ; 
+    width: 20px; 
+    height: 20px;
+    background-size: cover;
+}
+#basket-shop{
+    color: var(--off-white);
+    top: 5px;
+}
+#basket-shop .img{
+    /* background-image: url('../Imagenes/shopping-basket-solid.svg'); */
+    width: 15px;
+    height: 15px;      
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+main{
+    background: url(../imagenes_nutricion/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+footer{
+    background: black;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.content-foo{
+    font-size:var(--main-font);
+    text-align: center;
+}
+
+.content-foo h4{
+    font-size: var(--main-font);
+    color: white;
+    border-bottom: 3px solid rgb(163, 13, 163);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    font-size: var(--main-font);
+    color: gray;
+
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: var(--subtitle-font);
+    margin: 20px 0 0 0;
+    color: rgb(255, 255, 255);
+}
+
+
+ *,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+
+ 
+    .btn-cart{
+        background-color: var(--off-white);
+        display: block;
+        padding: 10px 25px;
+        border: 1px solid var(--warm-black);
+        color:var(--warm-black);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
