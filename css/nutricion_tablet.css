@@ -375,7 +375,8 @@ header .textos-header{
 main{
     
    width: 100vw;
-    background: url(../imagenes_nutricion/banner1.jpg);
+    /* background: var(--soft-orange); */
+    background-image: url(../Imagenes/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -444,10 +445,18 @@ a{color:inherit;text-decoration:none}
         text-decoration: none;
         font-weight: bold;
     }
-    .header-inicio-pc{
-        display: none;
-    }
     /*header*/
+   
+        .header-inicio-pc{
+            transform: scale(0);
+        }
+        .header{
+            transform: scale(1);
+        }
+    
+  
+   
+    
     nav{
         color: tomato;
     }
@@ -455,7 +464,7 @@ a{color:inherit;text-decoration:none}
     .hamburger{
         position: fixed;
         top: 30px;
-        right: 30px;
+        right: 0px;
         background: white;
         width: 40px;
         z-index: 20px;

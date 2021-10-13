@@ -38,6 +38,15 @@ html {
 }
 
 
+/* header*/
+
+    .header{
+        transform: scale(0);
+    }
+    .header-inicio-pc{
+        transform: scale(1);
+    }
+
 
 header{
     width: 100%;
