@@ -41,7 +41,7 @@ html {
 
 header{
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: #03001e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fdeff98c, #ec38bc86, #7403c09c, #03001e9a), url(../Imagenes/Logo.PNG) ;  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fdeff98c, #ec38bc86, #7403c09c, #03001e9a), url(../Imagenes/Logo.PNG) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -118,31 +118,22 @@ header .textos-header{
     position: relative;
 }
 .titulo__slider{
-    
+    display: block;
     font-size: var(--subtitle-font);
-    width: 100vw;
+    width: 100%;
     text-align: center;
-    color: var(--warm-black);
+    color: var(--botcoin-orange);
     position: absolute;
 }
 
 .container__categorias{
     margin-top: 60px ;
-    /* display: flex;
-    flex-wrap: wrap;*/
-    /* Para 4 columnas*/
-    justify-content: center; 
-    display: grid;
-    grid-template:auto/auto auto auto auto;
-    grid-gap: 5px;
-    /* Para 4 columnas*/
+    display: flex;
+    flex-wrap: wrap;
+ 
 }
 .categorias{
-    /* Para 4 columnas*/
-    width: 330px;
-    /* Para 4 columnas*/
-    /* border-radius: 10px; */
-    /* margin: 5px; */
+ 
     border: 1px solid #ccc;
     padding: 20px;
     background-color: rgba(245, 245, 245, 0.753);
@@ -339,13 +330,13 @@ header .textos-header{
 
 /*ensayo*/
 .productos-header__container{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+    position: relative;
+    display: block;    
     margin-top: 20px;
     
 }
 .productos-header__btn{
+    
     font-size: var(--main-font);
 }
 .productos-header__container .producto__header__input{
@@ -353,11 +344,12 @@ header .textos-header{
     box-shadow:0 12px 15px 0 rgba(148, 93, 153, 0.349),0 17px 50px 0 rgba(5, 5, 5, 0.281);
     display: block;
     padding: 10px;
-    width: 25cm
+    width: 100%;
 }
 .productos-header__container  .fa-search{
     position: absolute;
-    right: 50px ;
+    right: 10px ;
+    bottom: 10px;
     cursor: pointer;
 }
 
@@ -381,6 +373,8 @@ header .textos-header{
     cursor: pointer;
 }
 main{
+    
+   width: 100vw;
     background: url(../imagenes_nutricion/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -438,6 +432,10 @@ a{color:inherit;text-decoration:none}
 
  
     .btn-cart{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto ;
+        align-items: center;
         background-color: var(--off-white);
         display: block;
         padding: 10px 25px;
@@ -446,4 +444,51 @@ a{color:inherit;text-decoration:none}
         text-decoration: none;
         font-weight: bold;
     }
-
+    .header-inicio-pc{
+        display: none;
+    }
+    /*header*/
+    nav{
+        color: tomato;
+    }
+    
+    .hamburger{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        background: white;
+        width: 40px;
+        z-index: 20px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(0,0,0,.5);
+    }
+    
+    .menu-navegacion{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        height: 100%;
+        background-image: linear-gradient(to top, #30d0d0 0%, #330867 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform .3s ease-in-out;
+        transform: translate(110%);
+        box-shadow: 0 0 6px rgba(0,0,0,.5);
+    }
+    
+    .spread{
+        transform: translate(0);
+    }
+    
+    .menu-navegacion a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    
