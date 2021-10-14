@@ -105,6 +105,7 @@ header .textos-header{
     width: 100%;
 }
 
+
 .main {
     list-style: none;    
     margin-top: 0px; 
@@ -112,6 +113,54 @@ header .textos-header{
     /* background: linear-gradient(to bottom, #eec8aab9, #b99f8bb9); */
     
 }
+/*Ensayo slider manual*/
+.container__slider__productos{
+    top: 40px;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+    position: relative;
+    display: flex;
+ 
+}
+.slider__productos__btn{
+    position: absolute;
+    width:  40px;
+    height: 40px;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer
+}
+.slider__productos__btn__rigth{
+    right: 10px;
+
+}
+-slider__productos__btn__left{
+    left: 10px;
+}
+.slider__productos{
+    display: flex;
+    width: 700%;
+    height: 300px;
+    margin-left: -100%;
+}
+
+
+.slider__categorias__img{
+    display:block;
+    
+    object-fit: cover;
+
+}
+/*Ensayo slider manual*/
 .categorias .categorias__img,
 .categorias .fa-shopping-basket,
 .categorias .descripcion__categoria{
@@ -396,6 +445,115 @@ main{
     background-attachment: fixed;
     padding-bottom: 30px;
 }
+/*slider automatico ensayo*/
+.slider{
+    width: 60%;
+    margin: auto 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.349);
+    border: 1px solid rgba(128, 120, 120, 0.233);
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: cambio 30s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40PX;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    7%{margin-left: 0;}
+    10%{margin-left: -105%;}
+    17%{margin-left: -105%;}
+    20%{margin-left: -205%;}
+    27%{margin-left: -205%;}
+    30%{margin-left: -305%;}
+    37%{margin-left: -305%;}
+    40%{margin-left: -405%;}
+    47%{margin-left: -405%;}
+    50%{margin-left: -505%;}
+    55%{margin-left: -505%;}
+    57% {margin-left: -605%;}
+    62%{margin-left: -605%;}
+    65%{margin-left: -705%;}
+    70%{margin-left: -705%;}
+    72%{margin-left: -805%;}
+    77%{margin-left: -805%;}
+    80%{margin-left: -905%;}
+    85%{margin-left: -905%;}
+    87%{margin-left: -1005%;}
+    93%{margin-left: -1005%;}
+    95%{margin-left: -1105%;}
+    100%{margin-left: -1105%;}
+}
+/*contenido textos*/
+.imagen-about-us{
+    width: 45%;
+}
+.contenedor-sobre-nosotros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+     justify-content: space-evenly; 
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos{
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: purple;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 22px;
+    height: 20px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.contenido-textos h3{
+    text-align: left;
+    font-size: var(--main-font);
+    color: indigo;
+}
+
+.contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-size: var(--main-font);
+    text-align: justify;
+    color:var(--off-white);
+}
+.titulo {
+    color: indigo;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+} 
+
+/*fin contenido textos*/
+/*fin slider automatico ensayo*/
 footer{
     background: black;
     padding: 60px 0 30px 0;

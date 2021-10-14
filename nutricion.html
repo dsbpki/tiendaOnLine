@@ -7,8 +7,10 @@
     <title>Productos Nutrición</title>
     <link rel="stylesheet" href="./css/nutricion.css">
     <link rel="stylesheet" href="./css/nutricion_tablet.css" media="(min-width: 600px) and (max-width: 900px)" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'  >
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
 </head>
 <body>
     <header>
@@ -39,6 +41,7 @@
     <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-20.59,-53.78 C69.69,294.56 604.12,-271.88 531.31,197.86 L487.30,170.22 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
  
     <main class="main">
+        
        
       <h2 class="titulo__slider">Productos Nutrición</h2>
       <br>
@@ -54,6 +57,20 @@
           
             
       </div> 
+
+      <div class="container__slider__productos">
+        <div class="slider__productos" id="slider__productos">
+            <div class="slider__categorias__section"><a href="">Nutrición<img src="Imagenes/alimentación.jpg" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div>
+            <div class="slider__categorias__section"><a href="">Accesorios deportivos<img src="Imagenes/accesorios.jpg" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div>
+            <div class="slider__categorias__section"><a href="">Ergonomía<img src="Imagenes/ergo.png" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div>         
+            <div class="slider__categorias__section"><a href="">Salud Mental<img src="Imagenes/saludmental.jpg" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div>          
+            <div class="slider__categorias__section"><a href="">Hogar<img src="Imagenes/Hogar.jpg" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div>          
+            <div class="slider__categorias__section"><a href="">Bonos de regalo<img src="Imagenes/bonosregalo.jpg" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div> 
+            <div class="slider__categorias__section"><a href="">Descuentos<img src="Imagenes/descuentos.png" alt="" class="slider__categorias__img" style="width: 350px; height: 250px"></a></div> 
+        </div>
+        <div class="slider__productos__btn slider__productos__btn__rigth" id="btn__rigth"><i class="fas fa-arrow-right"></i></div>
+        <div class="slider__productos__btn slider__productos__btn__left" id="btn__left"><i class="fas fa-arrow-left"></i></div>
+  </div>
       
 <!-- <div class ="productos__container__slider"> -->
          
@@ -165,10 +182,35 @@
       </div>
       
 </div>
+<br>
 
-  <section class="services">
 
-  </section>
+<section class="contenedor sobre-nosotros">
+    <h2 class="titulo">Enterate de nuestras novedades!</h2>
+    <div class="contenedor-sobre-nosotros">
+        <div class="contenido-textos">
+            <h3><span>1</span>Nuevos Productos</h3>
+            <p>Revisa nuestra galeria de nuevos productos y obten hoy un 30% de descuento!</p>
+            <!-- <h3><span>2</span>Los mejores prodectos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eius accusamus quo saepe similique laborum eaque debitis nobis! Nam distinctio asperiores delectus, sed praesentium dolores odit dolore eius ex veritatis!</p> -->
+        </div>
+        <div class="slider">
+            <ul>
+                <li><img src="./imagenes_nutricion/ensure.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/enterex.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/glucerna.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/herbalife.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/pediasure.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/serious_mass.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/whey.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/ensure2.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/enterex2.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/glucerna2.jpg" alt="" class="imagen-about-us" style="width: 500px; height:300px";></li>
+                <li><img src="./imagenes_nutricion/herbalife2.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+                <li><img src="./imagenes_nutricion/pediasure2.jpg" alt="" class="imagen-about-us" style="width: 500px; height: 300px";></li>
+            </ul>
+        </div>
+  
   
      </main>
     <footer>
