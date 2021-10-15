@@ -457,9 +457,9 @@ a{color:inherit;text-decoration:none}
   
    
     
-    nav{
+    /* nav{
         color: tomato;
-    }
+    } */
     
     .hamburger{
         position: fixed;
@@ -478,9 +478,10 @@ a{color:inherit;text-decoration:none}
         position: fixed;
         top: 0;
         right: 0;
-        width: 30vw;
-        height: 100%;
+        width: 50vw;
+        height: 250px;
         background-image: linear-gradient(to top, #30d0d0 0%, #330867 100%);
+   
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
