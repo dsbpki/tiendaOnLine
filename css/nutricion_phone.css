@@ -392,7 +392,7 @@ footer{
 }
 
 .contenedor-footer{
-    display: flex;
+    display: block;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
