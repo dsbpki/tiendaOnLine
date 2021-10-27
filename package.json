@@ -1,0 +1,28 @@
+{
+  "name": "vistas",
+  "version": "1.0.0",
+  "description": "log in",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsbpki/tiendaOnLine.git"
+  },
+  "author": "david",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsbpki/tiendaOnLine/issues"
+  },
+  "homepage": "https://github.com/dsbpki/tiendaOnLine#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
